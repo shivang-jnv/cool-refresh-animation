@@ -19,6 +19,8 @@ class HomePage extends StatelessWidget {
         body: LiquidPullToRefresh(
           height: 200,
           color: Colors.deepPurple,
+          backgroundColor: Colors.deepPurple[200],
+          animSpeedFactor: 2,
           onRefresh: _handleRefresh,
           child: ListView(
             children: [
